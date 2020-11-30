@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite_File" duration-ms="17026" started-at="2020-11-25T15:43:30Z" finished-at="2020-11-25T15:43:47Z">
+    <groups>
+    </groups>
+    <test name="Test_register" duration-ms="17026" started-at="2020-11-25T15:43:30Z" finished-at="2020-11-25T15:43:47Z">
+      <class name="test.Test99GuruLogin">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.Test99GuruLogin@483bf400]" name="setup" is-config="true" duration-ms="7827" started-at="2020-11-25T21:13:30Z" finished-at="2020-11-25T21:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.Test99GuruLoginWithPageFactory@47fd17e3]" name="setup" is-config="true" duration-ms="6664" started-at="2020-11-25T21:13:38Z" finished-at="2020-11-25T21:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_Home_Page_Appear_Correct()[pri:0, instance:test.Test99GuruLogin@483bf400]" name="test_Home_Page_Appear_Correct" duration-ms="2456" started-at="2020-11-25T21:13:44Z" finished-at="2020-11-25T21:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Home_Page_Appear_Correct -->
+      </class> <!-- test.Test99GuruLogin -->
+      <class name="test.Test99GuruLoginWithPageFactory">
+        <test-method status="FAIL" signature="test_Home_Page_Appear_Correct()[pri:0, instance:test.Test99GuruLoginWithPageFactory@47fd17e3]" name="test_Home_Page_Appear_Correct" duration-ms="66" started-at="2020-11-25T21:13:47Z" finished-at="2020-11-25T21:13:47Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at PageFactory.Guru99Login.getLoginTitle(Guru99Login.java:50)
+	at test.Test99GuruLoginWithPageFactory.test_Home_Page_Appear_Correct(Test99GuruLoginWithPageFactory.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Home_Page_Appear_Correct -->
+      </class> <!-- test.Test99GuruLoginWithPageFactory -->
+    </test> <!-- Test_register -->
+  </suite> <!-- Suite_File -->
+</testng-results>
